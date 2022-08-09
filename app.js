@@ -131,11 +131,11 @@ let y = Math.round(Math.random() * (1000 - 1) + 1);
 let start = Math.round(Math.random() * (10 - 1) + 1);
 for(let i = start; i<=y; i++)
 {
-    if (i == fizzDivisor)
+    if (i % fizzDivisor ==0)
     {
         console.log("FIZZ");
     }
-    else if (i == buzzDivisor)
+    else if (i % buzzDivisor == 0)
     {
         console.log("BUZZ");
     }
